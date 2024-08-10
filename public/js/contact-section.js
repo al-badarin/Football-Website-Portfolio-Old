@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Define constants for service ID and template ID
+  // Define constants for service ID, template ID, and user ID
   const SERVICE_ID = 'jamal-id';
   const TEMPLATE_ID = 'football-website-email';
   const USER_ID = 'Y57XhLmA9mcdPNkyk';
@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const form = document.getElementById('contact-form');
   const formMessages = document.getElementById('form-messages');
+  const submitButton = form.querySelector('button[type="submit"]');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    console.log('Form is being submitted.');
 
     // Client-side validation
     const userName = form.querySelector('input[name="from_name"]');
@@ -36,14 +38,19 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    // Disable submit button to prevent multiple submissions
+    submitButton.disabled = true;
+
     // Send email using EmailJS
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form).then(
       function () {
         showSuccess('Your message has been sent successfully!');
         form.reset();
+        submitButton.disabled = false;
       },
       function (error) {
         showError('Oops! Something went wrong. Please try again.');
+        submitButton.disabled = false;
       }
     );
   });
