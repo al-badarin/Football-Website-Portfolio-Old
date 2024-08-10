@@ -22,18 +22,3 @@ section h2 {
   margin-bottom: 40px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer .social-media img {
-  width: 30px;
-  margin: 0 10px;
-}
-
-footer p {
-  margin-top: 10px;
-}
