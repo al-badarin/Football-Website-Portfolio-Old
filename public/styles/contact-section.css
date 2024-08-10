@@ -59,15 +59,19 @@
 }
 
 .error {
-  color: #f44336;
-  background-color: #ffd6d6;
+  /* color: #f44336;
+  background-color: #ffd6d6; */
+  color: white;
+  background-color: #f44336;
   padding: 10px;
   border-radius: 5px;
 }
 
 .success {
-  color: #4caf50;
-  background-color: #d6ffd6;
+  /* color: #4caf50;
+  background-color: #d6ffd6; */
+  color: white;
+  background-color: #4caf50;
   padding: 10px;
   border-radius: 5px;
 }
