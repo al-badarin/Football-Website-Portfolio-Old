@@ -48,6 +48,29 @@
   background-color: #ff5733;
 }
 
+.contact form input.error,
+.contact form textarea.error {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #4caf50;
+}
+
+.error-message {
+  background-color: #f44336;
+}
+
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
