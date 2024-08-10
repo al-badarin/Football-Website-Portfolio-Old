@@ -1,7 +1,15 @@
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #000000;
+  --text-color: #ffffff;
+  --gradient-start: #0d0d0d;
+  --gradient-end: #1a1a1a;
+}
+
 /* Buttons */
 .btn {
-  background-color: #ff5733;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: 15px 30px;
   text-decoration: none;
   font-size: 18px;
@@ -10,7 +18,7 @@
 }
 
 .btn:hover {
-  background-color: #e14f2c;
+  background-color: #b84124;
 }
 
 /* Gallery Grid */
