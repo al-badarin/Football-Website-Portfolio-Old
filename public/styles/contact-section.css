@@ -1,40 +1,58 @@
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #000000;
+  --text-color: #ffffff;
+  --gradient-start: #0d0d0d;
+  --gradient-end: #1a1a1a;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+}
+
+.contact h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
 .contact form {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
 }
 
 .contact form input,
 .contact form textarea {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
   border-radius: 5px;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact form input,
-.contact form textarea {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #333;
+  color: var(--text-color);
 }
 
 .contact form input:focus,
 .contact form textarea:focus {
-  border-color: #ff5733;
+  border-color: var(--primary-color);
   outline: none;
-  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
 }
 
 .contact form button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -42,13 +60,7 @@
 }
 
 .contact form button:hover {
-  background-color: #ff5733;
-}
-
-.contact form input.error,
-.contact form textarea.error {
-  border-color: red;
-  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  background-color: #ffcc33;
 }
 
 #form-messages {
@@ -59,8 +71,6 @@
 }
 
 .error {
-  /* color: #f44336;
-  background-color: #ffd6d6; */
   color: white;
   background-color: #f44336;
   padding: 10px;
@@ -68,8 +78,6 @@
 }
 
 .success {
-  /* color: #4caf50;
-  background-color: #d6ffd6; */
   color: white;
   background-color: #4caf50;
   padding: 10px;
