@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Football Portfolio</title>
+    <title>Jamal Al Badarin - Football Player & Coach</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Coaching Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/components.css" />
@@ -16,6 +21,7 @@
     <link rel="stylesheet" href="styles/achievements-section.css" />
     <link rel="stylesheet" href="styles/contact-section.css" />
     <link rel="stylesheet" href="styles/hero-section.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
     <!-- Header -->
@@ -131,17 +137,26 @@
     <!-- Footer -->
     <footer>
       <div class="social-media">
-        <!-- <a href="#"
-          ><img src="images/facebook-icon.png" alt="Facebook"
-        /></a>
-        <a href="#"
-          ><img src="images/twitter-icon.png" alt="Twitter"
-        /></a>
-        <a href="#"
-          ><img src="images/instagram-icon.png" alt="Instagram"
-        /></a> -->
+        <a href="https://facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:+359888881476">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="mailto:jamal.albadarin@example.com">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
-      <p>&copy; 2024 Football Coaching Portfolio. All rights reserved.</p>
+      <p>
+        &copy; <span id="year"></span> Jamal Al Badarin - Football Portfolio.
+        All rights reserved.
+      </p>
     </footer>
 
     <script src="js/smoothScroll.js"></script>
@@ -149,6 +164,7 @@
     <script src="js/hero-section.js"></script>
     <script src="js/about-section.js"></script>
     <script src="js/achievements-section.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/contact-section.js"></script>
     <script
       type="text/javascript"
