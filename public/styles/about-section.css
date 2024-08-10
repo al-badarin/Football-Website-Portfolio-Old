@@ -1,0 +1,9 @@
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 400px;
+  margin-right: 20px;
+}
