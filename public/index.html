@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Coaching Portfolio</title>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Football Coaching Portfolio</title>
-      <link rel="stylesheet" href="styles/base.css" />
-      <link rel="stylesheet" href="styles/layout.css" />
-      <link rel="stylesheet" href="styles/components.css" />
-      <link rel="stylesheet" href="styles/header.css" />
-      <link rel="stylesheet" href="styles/about-section.css" />
-      <link rel="stylesheet" href="styles/achievements-section.css" />
-      <link rel="stylesheet" href="styles/contact-section.css" />
-      <link rel="stylesheet" href="styles/hero-section.css" />
-    </head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Coaching Portfolio</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/about-section.css" />
+    <link rel="stylesheet" href="styles/achievements-section.css" />
+    <link rel="stylesheet" href="styles/contact-section.css" />
+    <link rel="stylesheet" href="styles/hero-section.css" />
   </head>
   <body>
     <!-- Header -->
@@ -110,12 +109,19 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <h2>Contact Me</h2>
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
+      <form id="contact-form" action="#" method="POST">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Your Email"
+          required
+        />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+
+      <div id="form-messages"></div>
     </section>
 
     <!-- Footer -->
@@ -139,6 +145,11 @@
     <script src="js/hero-section.js"></script>
     <script src="js/about-section.js"></script>
     <script src="js/achievements-section.js"></script>
+    <script src="js/contact-section.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
     <script src="js/contact-section.js"></script>
   </body>
 </html>
