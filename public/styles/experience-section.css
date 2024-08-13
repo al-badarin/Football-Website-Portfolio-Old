@@ -73,6 +73,18 @@
   color: #ffffff;
 }
 
+.experience-links i {
+  color: #cacaca;
+}
+
+/* .experience-links i.fa-google-drive{
+    color: #4285F4;
+}
+
+.experience-links i.fa-facebook{
+    color: #1877F2;
+} */
+
 .show-more-btn {
   margin-top: 10px;
   background-color: #ff5733;
