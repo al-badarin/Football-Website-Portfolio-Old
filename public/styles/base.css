@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   background: var(--gradient-start);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
