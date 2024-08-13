@@ -1,6 +1,6 @@
 .experience {
   padding: 50px 20px;
-  background-color: #222; 
+  background-color: #222;
   color: #ffffff;
 }
 
@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
-  color: #ff5733; 
+  color: #ff5733;
 }
 
 .gallery {
@@ -34,9 +34,15 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.experience-icon {
-  font-size: 2em;
-  color: #ff5733;
+.experience-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .experience-info h3 {
@@ -49,4 +55,57 @@
   font-size: 1.1em;
   margin: 5px 0;
   color: #cccccc;
+}
+
+.experience-links {
+  margin-top: 15px;
+}
+
+.experience-links a {
+  display: block;
+  color: #ff5733;
+  margin-bottom: 5px;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.experience-links a:hover {
+  color: #ffffff;
+}
+
+.show-more-btn {
+  margin-top: 10px;
+  background-color: #ff5733;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #ff3300;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 15px;
+}
+
+.hidden-content img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.hidden-content video {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+a.no-wrap {
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 0;
 }
