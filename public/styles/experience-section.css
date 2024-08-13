@@ -1,0 +1,52 @@
+.experience {
+  padding: 50px 20px;
+  background-color: #222; 
+  color: #ffffff;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ff5733; 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.experience-item {
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #333;
+  padding: 20px;
+}
+
+.experience-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.experience-icon {
+  font-size: 2em;
+  color: #ff5733;
+}
+
+.experience-info h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.experience-info p {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #cccccc;
+}
