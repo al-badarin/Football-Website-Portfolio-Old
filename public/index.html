@@ -108,7 +108,9 @@
       <h2>Player Experience</h2>
       <div class="gallery">
         <div class="experience-item" data-year="2021" data-club="club1">
-          <div class="experience-icon">⚽</div>
+          <div class="experience-logo">
+            <img src="images/club1-logo.png" alt="Club Name 1 Logo" />
+          </div>
           <div class="experience-info">
             <h3>Club Name 1</h3>
             <p>Position: Forward</p>
@@ -116,14 +118,16 @@
           </div>
         </div>
         <div class="experience-item" data-year="2019" data-club="club2">
-          <div class="experience-icon">⚽</div>
+          <div class="experience-logo">
+            <img src="images/club2-logo.png" alt="Club Name 2 Logo" />
+          </div>
           <div class="experience-info">
             <h3>Club Name 2</h3>
             <p>Position: Midfielder</p>
             <p>2018 - 2019</p>
           </div>
         </div>
-        <!-- Add more player experience cards as needed -->
+        <!-- TODO: Add more player experience cards as needed -->
       </div>
     </section>
 
@@ -131,23 +135,163 @@
     <section id="coach-experience" class="experience">
       <h2>Coach Experience</h2>
       <div class="gallery">
-        <div class="experience-item" data-year="2023" data-club="club1">
-          <div class="experience-icon">⚽</div>
+        <!-- FC Rozova Dolina - 2024 -->
+        <div class="experience-item" data-year="2024" data-club="rozova-dolina">
+          <div class="experience-logo">
+            <img src="images/logos/rozova-dolina.png" alt="FC Rozova Dolina" />
+          </div>
           <div class="experience-info">
-            <h3>Club Name 1</h3>
-            <p>Role: Assistant Coach</p>
-            <p>2022 - 2023</p>
+            <h3>FC Rozova Dolina</h3>
+            <p>Position: Semi-Pro Football Player & 1st Team Assistant Coach</p>
+            <p>January 2024 – Present</p>
+            <div class="experience-links">
+              <a href="https://www.facebook.com/fcrosevalley" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook Page
+              </a>
+              <a
+                href="./pdf-word-files/Coach-Contract_Jamal-Al-Badarin.pdf"
+                download="Coach-Contract_Jamal-Al-Badarin.pdf"
+              >
+                <i class="fa-solid fa-file"></i> Coach Contract
+              </a>
+              <a
+                href="./pdf-word-files/Recommendation_Coach_Jamal-Al-Badarin.pdf"
+                download="Recommendation_Coach_Jamal-Al-Badarin.pdf"
+              >
+                <i class="fa-solid fa-file"></i> Recommendation Letter
+              </a>
+              <a
+                href="https://drive.google.com/drive/folders/1YM4asN4pOXbkSAPpPLZ5eLXHBidl4o7E?usp=sharing"
+                target="_blank"
+              >
+                <i class="fab fa-google-drive"></i> Coaching Work Portfolio
+              </a>
+            </div>
           </div>
         </div>
-        <div class="experience-item" data-year="2022" data-club="club2">
-          <div class="experience-icon">⚽</div>
+
+        <!-- OFC Akademik Svishtov - 2023 -->
+        <div
+          class="experience-item"
+          data-year="2023"
+          data-club="akademik-svishtov"
+        >
+          <div class="experience-logo">
+            <img src="images/logos/svishtov.png" alt="OFC Akademik Svishtov" />
+          </div>
           <div class="experience-info">
-            <h3>Club Name 2</h3>
-            <p>Role: Head Coach</p>
-            <p>2021 - 2022</p>
+            <h3>OFC Akademik Svishtov</h3>
+            <p>Position: Semi-Pro Football Player & 1st Team Assistant Coach</p>
+            <p>April 2023 – August 2023</p>
+            <p>Position: Head Coach – U19 & U17</p>
+            <p>Position: General Coordinator - U19-U15</p>
+            <div class="experience-links">
+              <a
+                href="https://www.facebook.com/akademiksvishtov.bg"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i> Facebook Page
+              </a>
+              <a
+                href="https://drive.google.com/drive/folders/1df-2jDF9-Gx6x3qlTaK8BT2lPujlwtx4?usp=sharing"
+                target="_blank"
+              >
+                <i class="fab fa-google-drive"></i> Coaching Work Portfolio
+              </a>
+            </div>
           </div>
         </div>
-        <!-- Add more coach experience cards as needed -->
+
+        <!-- FC Rozova Dolina - 2022 -->
+        <div
+          class="experience-item"
+          data-year="2022"
+          data-club="rozova-dolina-2022"
+        >
+          <div class="experience-logo">
+            <img src="images/logos/rozova-dolina.png" alt="FC Rozova Dolina" />
+          </div>
+          <div class="experience-info">
+            <h3>FC Rozova Dolina</h3>
+            <p>Position: Semi-Pro Football Player & 1st Team Analyst</p>
+            <p>January 2022 – November 2022</p>
+            <div class="experience-links">
+              <a href="https://www.facebook.com/fcrosevalley" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook Page
+              </a>
+              <a
+                href="https://drive.google.com/drive/folders/1_Tm-8h5YZJeGHjAre_OT1CmiriVMolKC?usp=sharing"
+                target="_blank"
+              >
+                <i class="fab fa-google-drive"></i> Analysis Work Portfolio
+              </a>
+              <button
+                class="show-more-btn"
+                onclick="toggleShowMore('rozova-dolina-2022-content', this)"
+              >
+                Show More
+              </button>
+              <div class="hidden-content" id="rozova-dolina-2022-content">
+                <p>
+                  Below you can see some of my portfolio. I made a video
+                  analysis against our opponents FC Levski Lom and FC Marek
+                  Dupnitsa during the tournament "Bulgarian AFL Cup". We played
+                  against FC Levski - Lom in the semi-finals - we won 2:0 and in
+                  the interview, made by
+                  <a
+                    href="https://sportal.bg/news-2021052616104860902"
+                    target="_blank"
+                    class="no-wrap"
+                    >Sportal.bg</a
+                  >, the coach and the captain of the team are saying that
+                  <b
+                    >we were very well prepared tactically for the game thanks
+                    to my analysis.</b
+                  >
+                </p>
+
+                <video controls>
+                  <source
+                    src="./images/analysis/video_sportal.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <a
+                  href="https://drive.google.com/drive/folders/1TZJn9m4vGIY6eIoRr8PskdGbYrNhPd6V?usp=drive_link"
+                  target="_blank"
+                >
+                  <i class="fab fa-google-drive"></i> See the analysis
+                </a>
+                <hr />
+                <p class="marek-para">
+                  We played against FC Marek Dupnitsa in the final. Again, I
+                  made the analysis and the tactical preparation before the
+                  game. We won 3:2 and for the first time in the history of our
+                  club we are <b>winners of Bulgarian AFL Cup.</b>
+                </p>
+                <div class="marek-media">
+                  <img
+                    src="./images/analysis/marek_analysis.jpg"
+                    alt="analysis-photo"
+                    class="vertical-img"
+                  />
+                  <img
+                    src="./images/analysis/cup.jpg"
+                    alt="cup-winning-photo"
+                    class="cup-img"
+                  />
+                </div>
+                <a
+                  href="https://drive.google.com/drive/folders/14XJOFBMxTaS92z0jqoGk0MW5Er09VDgw?usp=sharing"
+                  target="_blank"
+                >
+                  <i class="fab fa-google-drive"></i> See the analysis
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -211,6 +355,7 @@
     </footer>
 
     <script src="js/smoothScroll.js"></script>
+    <script src="js/toggleShowMore.js"></script>
     <script src="js/header.js"></script>
     <script src="js/hero-section.js"></script>
     <script src="js/about-section.js"></script>
