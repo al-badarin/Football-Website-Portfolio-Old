@@ -63,6 +63,7 @@ header nav ul li a {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
 }
 
 header nav ul li a.active,
@@ -132,7 +133,7 @@ header nav ul li a:hover::before {
     right: 5px;
     background-color: rgba(0, 0, 0, 0.95);
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     display: none;
     padding: 10px;
     border-radius: 4px;
@@ -140,13 +141,14 @@ header nav ul li a:hover::before {
 
   header nav ul.showing {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   header nav ul li {
-    width: 100%;
-    margin: 0;
-    text-align: left;
-    margin-bottom: 10px;
+    margin: 5px 0;
+    text-align: center;
   }
 
   header nav ul li:last-child {
@@ -154,13 +156,22 @@ header nav ul li a:hover::before {
   }
 
   header nav ul li a {
-    padding: 10px;
     font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
   }
 
+  header nav ul li a.active,
   header nav ul li a:hover {
     color: #ffffff;
     background-color: #ff5733;
-    border-radius: 4px;
+    border-radius: 5px;
+  }
+
+  header nav ul li a {
+    display: inline-block;
+    width: auto;
   }
 }
