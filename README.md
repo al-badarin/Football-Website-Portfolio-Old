@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-![Website Hero Preview](./preview-1.png)
+![Website Hero Preview](./preview.png)
 
 <p>Welcome to the repository of my Football Portfolio Website. This portfolio showcases my experience and achievements both as a football player and as a coach. The website features a modern design, detailed experience sections, and a contact form for inquiries.</p>
 
